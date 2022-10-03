@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="./produtos/logo.jpg" class="logo" alt="Logo da Barbearia"></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nome_sobrenome">Nome e sobrenome</label>
+            <input type="text" id="nome_sobrenome" class="input_padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input_padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input_padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="70" rows="10" class="input_padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+
+                <label for="radio_email"><input name="contato" type="radio" value="email" id="radio_email">Email</label>
+                <label for="radio_telefone"><input name="contato" type="radio" value="telefone" id="radio_telefone">Telefone</label>
+                <label for="radio_whatsapp"><input name="contato" type="radio" value="whatsapp" id="radio_whatsapp" checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar"><!--submit é de envio-->    
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Período de Funcionamento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quinta-Feira</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="./produtos/logo-branco.png" alt="Logo da Barbearia">
+        <p class="copyrigh">&copy; Copyright B. Alcantara - 2022</p>
+    </footer>
+    
+</body>
+</html>
